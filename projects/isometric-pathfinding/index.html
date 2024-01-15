@@ -1,0 +1,32 @@
+﻿<!doctype html>
+<html>
+  <head>
+    <title>Isometric A* Pathfinding</title>
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script rel="javascript" type="text/javascript" src="js/heuristics.js"></script>
+    <script rel="javascript" type="text/javascript" src="js/binaryheap.js"></script>
+    <script rel="javascript" type="text/javascript" src="js/astar.js"></script>
+    <script rel="javascript" type="text/javascript" src="js/grid.js"></script>
+    <script rel="javascript" type="text/javascript" src="js/main.js"></script>
+  </head>
+  <body onload="initialize(800, 380);">
+  <div id="top">
+    <h1>Isometric A* Pathfinding</h1>
+    <small>
+      <a href="/">back</a> //
+      <a href="">reload</a>
+    </small>
+	</div>
+    <canvas id="canvas" width="800" height="400">Whoops! Can't show that in a Christian browser!</canvas>
+    <p>
+      <small>
+        <span style="color:#7eca90;">shortest path</span> //
+        <span style="color:#b3b3cd;">tile checked</span> //
+        <span style="color:#9e24a3;">player</span> //
+        <span style="color:#882222;">target</span>
+      </small><br>
+      <small id="time"></small>
+    </p>
+  </body>
+</html>

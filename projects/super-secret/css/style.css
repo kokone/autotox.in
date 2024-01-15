@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Pixelade";
+  src: url("../resources/fonts/PIXELADE.TTF") format("truetype");
+  }
+h2 {  }
+
+body {
+  background-color: #284907;
+}
+
+#canvas {
+  padding: 2px;
+	border:1px solid #D8CAA8;
+}
+
+h1 {
+  font-family: "Pixelade", sans-serif;
+  color:#D8CAA8;
+}

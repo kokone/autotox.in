@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+	<head>
+		<title>jQuery test</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript">
+    if(typeof jQuery == 'undefined') {
+      alert('jQuery 1.4.2 from Google\'s CDN  didn\'t load :(');
+    } else {
+      $(document).ready(function() {
+        $('#jquery').show();
+      });
+    }
+    </script>
+	</head>
+	<body>
+		<p style="display:none;" id="jquery">jQuery 1.4.2 from Google's CDN seems to load just fine!</p>
+	</body>
+</html>

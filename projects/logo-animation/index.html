@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Animated logo</title>
+  </head>
+  <body>
+    <canvas width=200 height=100 id="logo"><img src="images/logo-static.png"></canvas>
+    <!-- De <img> in de canvas is voor oude browsers die canvas elementen niet aankunnen. Je kan hier bijvoorbeeld het .gif bestand plaatsen, of een niet-bewegend bestand -->
+    <script>
+      var canvas = document.getElementById('logo'), ctx = canvas.getContext('2d'), bg = new Image(), fg = new Image(), loadedCount = 0;
+      bg.src = 'images/logo-bg.png', fg.src = 'images/logo-fg.png';
+      var onload = function() {
+        if(++loadedCount == 2) setInterval(animate_logo,100);
+      }
+      bg.onload = fg.onload = onload;
+      var x = 0, modifier = -1;
+      function animate_logo() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        x += modifier;
+        if(x <= -(bg.width - canvas.width) || x >= 0) modifier *= -1;
+        ctx.drawImage(bg, x, 0);
+        ctx.drawImage(fg, 0, 0);
+      }
+    </script>
+  </body>
+</html>

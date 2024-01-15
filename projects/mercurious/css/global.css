@@ -1,0 +1,55 @@
+body {
+  font-size:12px;
+}
+.container {
+  margin-top:20px;
+}
+tr.orange, th.orange, tr.orange td, tr.orange th {
+  background:#f79321;
+  color:white;
+}
+.table td.bid, .table td.ask {
+  cursor:pointer;
+}
+.table .bid, .table .bid_qty, .table .last {
+  text-align:right;
+}
+.table .bid_code, .table .ask_code {
+  text-align:center;
+}
+.table .group tr:first-child  td{
+  border-top:3px solid #888;
+}
+.table .group th {
+  border-top:3px solid #888;
+}
+#table-main {
+  border:3px solid #888;
+}
+.expand {
+ cursor:pointer;
+ font-family:monospace;
+}
+#order_ticket .block {
+  margin-top:10px;
+  padding:10px;
+  border:1px solid #000;
+}
+#order_ticket .block td {
+  min-width:200px;
+}
+#order_ticket .block p {
+  margin:0;
+}
+.ecl {
+  color:#ff00ff;
+}
+.nma {
+  color:#00c713;
+}
+.auto {
+  color:#0056bf;
+}
+body.modal-open {
+    overflow: hidden;
+}

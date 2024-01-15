@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Mercurious TP"
+AuthUserFile "/home/autojbsn/.htpasswds/public_html/projects/mercurious/passwd"
+require valid-user
